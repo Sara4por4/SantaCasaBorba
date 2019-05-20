@@ -1,0 +1,207 @@
+.nav{
+   margin-top: 15px;
+   @extend .transition;
+
+   @media (min-width: $screen-md-min) {
+      margin-top: 30px;
+   }
+
+   &__responsive{
+      display: flex;
+      background-color: white;
+      padding: 5px 0;
+
+      @media (min-width: $screen-sm-min) {
+         display: none;
+      }
+
+      .app-logo{
+         width: 70px;
+         height: 65px;
+      }
+      li{
+         flex-grow: 1;
+         display: inline-flex;
+         justify-content:space-around;
+         align-self: center;
+      }
+   }
+   &__dropmenu{
+      padding: 5px 0;
+      background-color: white;
+      margin-top:5px;
+
+      li{
+         a{
+            font-size: 1rem;
+            line-height: 50px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            text-transform: uppercase;
+            font-weight: $font-weight-regular;
+            font-family: $font-family-secondary;
+
+            @media (min-width: $screen-sm-min) {
+               line-height: 40px;
+               font-size: .9rem;
+            }
+
+            @media (min-width: $screen-md-min) {
+               font-size: 1rem;
+            }
+         }
+         &:focus,
+         &:hover,
+         &.active{
+            a{
+               color: $orange-color;
+               text-decoration: none;
+            }
+         }
+      }
+
+      .social-list{
+         text-align: center;
+         li{
+            display: inline-block;
+            width: 35px;
+            line-height: 35px;
+            a{
+               font-size: 24px;
+            }
+         }
+      }
+   }
+
+   &__menu{
+      background-color: white;
+      margin-top:5px;
+
+      @media (min-width: $screen-sm-min) {
+         margin-top:0;
+         display: flex;
+         padding: 10px 0;
+      }
+
+      li{
+         @media (min-width: $screen-sm-min) {
+            flex-grow: 1;
+            display: inline-flex;
+            justify-content:space-around;
+            align-self: center;
+         }
+         a{
+            font-size: 1rem;
+            line-height: 50px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            text-transform: uppercase;
+            font-weight: $font-weight-regular;
+            font-family: $font-family-secondary;
+
+            @media (min-width: $screen-sm-min) {
+               line-height: 40px;
+               font-size: .9rem;
+            }
+
+            @media (min-width: $screen-md-min) {
+               font-size: 1rem;
+            }
+         }
+         &:focus,
+         &:hover,
+         &.active{
+            a{
+               color: $orange-color;
+               text-decoration: none;
+            }
+         }
+      }
+   }
+   .icon--share{
+      color: $orange-color;
+   }
+   .icon--chat{
+      color: $blue-color;
+   }
+}
+.social-dropdown{
+   display: block;
+   position: relative;
+
+   .icon--share{
+      height: 35px;
+      width: 35px;
+      display: block;
+      line-height: 35px;
+      font-size: 16px;
+      text-align: center;
+      color: $orange-color !important;
+
+      &:hover{
+         text-decoration: none;
+      }
+   }
+   .social-list{
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 35px;
+      top: 100%;
+      background-color:rgba(230, 230, 230, 0.9);
+      z-index: 3;
+      box-shadow: -1px -1px 30px -1px #9a99a2;
+
+      li{
+         width: 35px;
+         @extend .transition;
+         display: block !important;
+
+         &:hover{
+            background-color: $white-color;
+         }
+      }
+   }
+}
+
+.app-logo{
+  padding: 0;
+  width: 90px;
+  height: 85px;
+  position: relative;
+  transition: width .3s ease-in-out;
+  display: block;
+
+  @media (min-width: $screen-sm-min) {
+     width: 80px;
+     height: 75px;
+  }
+  @media (min-width: $screen-md-min) {
+     width: 90px;
+     height: 85px;
+  }
+  &.white{
+
+     a{
+        background: url('/front/img/logo-white.png') no-repeat center /contain;
+     }
+ }
+  a{
+     text-align: center;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: inherit;
+    text-indent: 2000em;
+    background: url('/front/img/logo.png') no-repeat center /contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    line-height: 85px !important;
+  }
+}

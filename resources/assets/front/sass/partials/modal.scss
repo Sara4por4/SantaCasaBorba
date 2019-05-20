@@ -1,0 +1,42 @@
+.modal{
+   padding: 10px !important;
+
+   @media (min-width: $screen-sm-min) {
+      padding: 60px !important;
+   }
+   @media (min-width: $screen-lg-min) {
+      padding: 100px !important;
+   }
+
+
+   .modal-dialog{
+      margin:0;
+   }
+   .modal-body{
+      overflow: hidden;
+
+      @media (min-width: $screen-xl-min) {
+         padding: 80px 200px !important;
+      }
+      iframe{
+         width: 100%;
+         height: auto;
+          min-height: 600px;
+          margin: auto;
+      }
+   }
+   .modal-dialog{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+   }
+
+   .link{
+      float: right;
+   }
+}
+
+.modal-backdrop{
+   background-color:rgba(4, 2, 23, 0.9);
+
+}

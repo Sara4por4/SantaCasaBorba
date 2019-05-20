@@ -1,0 +1,49 @@
+
+/**
+ * Colors
+ */
+$colors: (
+    'black'            : #040217,
+    'purple'            : #5942ee,
+    'dark-purple'       : #3014ea,
+    'light-orange'      : #7eccbd,
+    'orange'            : #fb900b,
+    // 'blue'            : #3014ea,
+    'blue'             : #0086d6,
+    'light-grey'        : #e5e5e7,
+    'grey'              : #9a99a2,
+    'white'             : #fff,
+);
+
+/**
+ * Color applications
+*/
+$black-color                : map-get($colors, 'black');
+$purple-color                : map-get($colors, 'purple');
+$dark-purple-color           : map-get($colors, 'dark-purple');
+$light-orange-color           : map-get($colors, 'light-orange');
+$orange-color                : map-get($colors, 'orange');
+$blue-color                : map-get($colors, 'blue');
+$light-grey-color           : map-get($colors, 'light-grey');
+$grey-color                 : map-get($colors, 'grey');
+$white-color                : map-get($colors, 'white');
+
+// Typography
+$font-family-icons: 'Material Design Icons';
+$font-family-secondary: 'Fira Sans', sans-serif;
+$font-family-primary: 'Patrick Hand', cursive;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+// Body
+$body-bg: #fff;
+
+// Navbar
+$navbar-default-bg: transparent;
+
+// Panels
+$panel-default-heading-bg: transparent;

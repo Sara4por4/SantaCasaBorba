@@ -1,0 +1,53 @@
+
+.cta{
+   width: 100%;
+   background-color: $orange-color;
+   padding: 30px 15px;
+
+   @media (min-width: $screen-md-min) {
+      padding: 40px;
+   }
+   @media (min-width: $screen-lg-min) {
+      padding: 40px 60px;
+   }
+   @media (min-width: $screen-xl-min) {
+      padding: 40px 60px;
+   }
+
+   &__title{
+      color: $white-color;
+      text-align: center;
+      @media (min-width: $screen-sm-min) {
+         text-align: left;
+      }
+   }
+
+   &__btns{
+      text-align: center;
+      margin-top:30px;
+      @media (min-width: $screen-sm-min) {
+         margin-top:0;
+         text-align: right;
+      }
+      li{
+         vertical-align: top;
+         display: inline-block;
+         a.icon{
+            display: block;
+            background-color: white;
+            color: $orange-color;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            width: 50px;
+         }
+
+         &:hover{
+            a{
+               text-decoration: none;
+               color: $black-color;
+            }
+         }
+      }
+   }
+}
